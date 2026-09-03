@@ -11003,6 +11003,11 @@ html {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+.portfolio-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
@@ -11047,7 +11052,8 @@ html {
 
 table {
   width: 100%;
-  border: none; 
+  table-layout: fixed;
+  border: none;
   font-size: 1.25rem;
   font-weight: 300;
 }
@@ -11056,5 +11062,12 @@ td {
   text-align: center;
   border: none;
   font-size: 1.25rem;
-  font-weight: 300; 
+  font-weight: 300;
+  word-wrap: break-word;
+}
+@media (max-width: 576px) {
+  td {
+    padding: 4px 2px;
+    font-size: 0.7rem;
+  }
 }
